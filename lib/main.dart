@@ -2,22 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:tune_player_app_t/my_home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TuneApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class TuneApp extends StatelessWidget {
+  const TuneApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      // theme: ThemeData(
-      // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      //   useMaterial3: true,
-      // ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: ThemeData(
+        useMaterial3: true,
+      ),
+      home: const MyHomePage(title: 'Flutter Tune'),
     );
   }
 }
