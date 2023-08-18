@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tune_player_app_t/my_home_page.dart';
+import 'package:tune_player_app_t/views/my_home_page.dart';
 
 void main() {
   runApp(const TuneApp());
@@ -10,13 +10,10 @@ class TuneApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Flutter Tune'),
+      home: MyHomePage(title: 'Flutter Tune'),
     );
   }
 }
